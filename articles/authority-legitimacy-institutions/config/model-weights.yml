@@ -1,0 +1,36 @@
+authority_legitimacy_weights:
+  formal_authority_clarity: 0.11
+  procedural_legitimacy: 0.14
+  outcome_legitimacy: 0.12
+  trust: 0.13
+  rule_clarity: 0.11
+  social_recognition: 0.11
+  accountability: 0.12
+  repair_capacity: 0.10
+  fairness: 0.10
+  arbitrariness_pressure: -0.14
+  visible_inconsistency: -0.10
+  unequal_burden: -0.09
+  opacity_pressure: -0.08
+voluntary_compliance_weights:
+  authority_legitimacy_strength: 0.20
+  trust: 0.13
+  fairness: 0.12
+  shared_norm_support: 0.11
+  rule_clarity: 0.10
+  repair_capacity: 0.08
+  enforcement_coercion_pressure: -0.12
+  arbitrariness_pressure: -0.10
+  unequal_burden: -0.08
+thresholds:
+  high_legitimacy: 60
+  high_voluntary_compliance: 60
+  fragile_legitimacy_procedural_legitimacy: 40
+  fragile_legitimacy_trust: 40
+  high_arbitrariness_pressure: 70
+  high_arbitrariness_visible_inconsistency: 65
+  high_arbitrariness_repair_capacity: 40
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "Legitimacy scores do not prove rightfulness, justice, competence, or moral authority."
+  - "Legitimacy models should not replace rights, appeal, accountability, repair, or affected-community participation."

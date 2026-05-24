@@ -1,0 +1,59 @@
+title: "Authority and Legitimacy in Institutions"
+slug: "authority-legitimacy-institutions"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/authority-legitimacy-institutions"
+article_url: "/authority-and-legitimacy-in-institutions/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - authority-legitimacy modeling
+  - voluntary-compliance simulation
+  - procedural-legitimacy analysis
+  - trust and rule-clarity diagnostics
+  - accountability and repair-capacity review
+  - social-recognition modeling
+  - unequal-burden analysis
+  - opacity-pressure analysis
+  - arbitrariness and visible-inconsistency diagnostics
+  - fragile legitimacy-environment review
+  - high-arbitrariness environment review
+  - legitimacy-repair sensitivity analysis
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - authority, legitimacy, and compliance modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - authority scoring real people or communities
+    - legitimacy scoring real people or communities
+    - ranking real people, firms, agencies, workers, students, or communities
