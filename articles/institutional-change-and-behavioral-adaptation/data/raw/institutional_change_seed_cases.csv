@@ -1,0 +1,6 @@
+institution_id,institution_type,change_type,baseline_adaptation_challenge,notes
+1,public_governance,policy_reform,high,synthetic seed case
+2,public_health,implementation_change,medium,synthetic seed case
+3,education,curriculum_and_assessment_change,high,synthetic seed case
+4,infrastructure,digital_operations_change,medium,synthetic seed case
+5,regulatory_system,enforcement_change,high,synthetic seed case

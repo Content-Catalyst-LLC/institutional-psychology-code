@@ -1,0 +1,52 @@
+title: "Institutional Change and Behavioral Adaptation"
+slug: "institutional-change-and-behavioral-adaptation"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/institutional-change-and-behavioral-adaptation"
+article_url: "/institutional-change-and-behavioral-adaptation/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - institutional change modeling
+  - behavioral adaptation simulation
+  - recursive feedback modeling
+  - legitimacy threshold diagnostics
+  - transition burden review
+  - fragile adaptation analysis
+  - path dependence analysis
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - institutional adaptation modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - ranking real people or communities

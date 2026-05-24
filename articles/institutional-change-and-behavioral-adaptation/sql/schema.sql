@@ -1,43 +1,56 @@
--- Article-level synthetic institutional psychology schema.
+-- Institutional Change and Behavioral Adaptation synthetic research schema.
+-- This schema is for demonstration and reproducible analysis only.
 
-CREATE TABLE IF NOT EXISTS institutional_observations (
-    observation_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
-    period INTEGER NOT NULL,
-    legitimacy_strength REAL,
-    normative_stability REAL,
-    trust_density REAL,
-    cognitive_processing_quality REAL,
-    information_flow_effectiveness REAL,
-    memory_retention REAL,
-    learning_capacity REAL,
-    fragmentation_pressure REAL,
-    institutional_effectiveness REAL,
-    high_alignment INTEGER
+DROP TABLE IF EXISTS institutional_change_cases;
+DROP TABLE IF EXISTS institutional_change_periods;
+
+CREATE TABLE institutional_change_cases (
+    institution_id INTEGER PRIMARY KEY,
+    feedback_quality REAL NOT NULL,
+    adaptive_capacity REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    incentive_alignment REAL NOT NULL,
+    normative_support REAL NOT NULL,
+    governance_capacity REAL NOT NULL,
+    path_dependence REAL NOT NULL,
+    behavioral_flexibility REAL NOT NULL,
+    coordination_quality REAL NOT NULL,
+    environmental_change REAL NOT NULL,
+    distributional_attention REAL NOT NULL,
+    transition_burden REAL NOT NULL,
+    change_score REAL,
+    successful_adaptation INTEGER,
+    high_transition_burden INTEGER,
+    fragile_adaptation INTEGER
 );
 
-CREATE TABLE IF NOT EXISTS compliance_records (
-    record_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
+CREATE TABLE institutional_change_periods (
     period INTEGER NOT NULL,
-    perceived_legitimacy REAL,
-    expectation_of_others_compliance REAL,
-    procedural_trust REAL,
-    norm_support REAL,
-    role_identification REAL,
-    uncertainty_pressure REAL,
-    alignment_probability REAL,
-    observed_alignment INTEGER
+    institution_id INTEGER NOT NULL,
+    environmental_change REAL NOT NULL,
+    adaptation_pressure REAL NOT NULL,
+    institutional_strength REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    path_dependence REAL NOT NULL,
+    transition_burden REAL NOT NULL,
+    coordination_quality REAL NOT NULL,
+    distributional_attention REAL NOT NULL,
+    high_change INTEGER,
+    fragile_adaptation INTEGER,
+    PRIMARY KEY (period, institution_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_unit
-ON institutional_observations(unit_id);
+CREATE INDEX idx_change_cases_score
+ON institutional_change_cases (change_score);
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_period
-ON institutional_observations(period);
+CREATE INDEX idx_change_cases_success
+ON institutional_change_cases (successful_adaptation);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_unit
-ON compliance_records(unit_id);
+CREATE INDEX idx_change_cases_fragile
+ON institutional_change_cases (fragile_adaptation);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_period
-ON compliance_records(period);
+CREATE INDEX idx_change_cases_burden
+ON institutional_change_cases (transition_burden);
+
+CREATE INDEX idx_change_periods_adaptation_pressure
+ON institutional_change_periods (adaptation_pressure);

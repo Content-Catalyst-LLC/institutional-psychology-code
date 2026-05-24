@@ -1,0 +1,22 @@
+weights:
+  feedback_quality: 0.13
+  adaptive_capacity: 0.14
+  legitimacy: 0.10
+  incentive_alignment: 0.10
+  normative_support: 0.09
+  governance_capacity: 0.12
+  behavioral_flexibility: 0.10
+  coordination_quality: 0.08
+  environmental_change: 0.06
+  distributional_attention: 0.05
+  path_dependence: -0.12
+  transition_burden: -0.05
+thresholds:
+  successful_adaptation: 58
+  high_transition_burden: 65
+  fragile_adaptation_legitimacy: 45
+  high_adaptation_pressure: 0.60
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "Formal change should not be confused with behavioral adaptation."
+  - "Transition burden should be reviewed qualitatively, not only numerically."
