@@ -1,0 +1,24 @@
+weights:
+  feedback_quality: 0.13
+  memory_retention: 0.12
+  communication_openness: 0.12
+  interpretive_quality: 0.12
+  decision_revisability: 0.12
+  psychological_safety: 0.12
+  accountability_reach: 0.10
+  disconfirming_evidence: 0.06
+  institutional_inertia: -0.12
+  signal_distortion: -0.10
+  memory_decay: -0.08
+  defensive_routines: -0.08
+  power_protection: -0.08
+  feedback_delay: -0.07
+thresholds:
+  high_adaptation: 60
+  fragile_learning_communication_openness: 40
+  high_inertia_learning_institutional_inertia: 65
+  high_inertia_learning_signal_distortion: 65
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High adaptation indicators do not prove justice, wisdom, or institutional responsibility."
+  - "Feedback collection should not automatically be treated as learning."
