@@ -1,43 +1,60 @@
--- Article-level synthetic institutional psychology schema.
+-- Regulatory Behavior and Institutional Accountability synthetic research schema.
+-- This schema is for demonstration and reproducible analysis only.
 
-CREATE TABLE IF NOT EXISTS institutional_observations (
-    observation_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
-    period INTEGER NOT NULL,
-    legitimacy_strength REAL,
-    normative_stability REAL,
-    trust_density REAL,
-    cognitive_processing_quality REAL,
-    information_flow_effectiveness REAL,
-    memory_retention REAL,
-    learning_capacity REAL,
-    fragmentation_pressure REAL,
-    institutional_effectiveness REAL,
-    high_alignment INTEGER
+DROP TABLE IF EXISTS regulatory_accountability_units;
+DROP TABLE IF EXISTS regulatory_accountability_periods;
+
+CREATE TABLE regulatory_accountability_units (
+    unit_id INTEGER PRIMARY KEY,
+    oversight_strength REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    incentive_alignment REAL NOT NULL,
+    enforcement_credibility REAL NOT NULL,
+    information_quality REAL NOT NULL,
+    adaptive_learning REAL NOT NULL,
+    accountability_reach REAL NOT NULL,
+    capture_pressure REAL NOT NULL,
+    regulatory_burden REAL NOT NULL,
+    evasion_pressure REAL NOT NULL,
+    hypocrisy_visibility REAL NOT NULL,
+    unequal_accountability REAL NOT NULL,
+    accountability_effectiveness REAL,
+    high_accountability INTEGER,
+    fragile_regulation INTEGER,
+    high_burden_regulation INTEGER
 );
 
-CREATE TABLE IF NOT EXISTS compliance_records (
-    record_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
+CREATE TABLE regulatory_accountability_periods (
     period INTEGER NOT NULL,
-    perceived_legitimacy REAL,
-    expectation_of_others_compliance REAL,
-    procedural_trust REAL,
-    norm_support REAL,
-    role_identification REAL,
-    uncertainty_pressure REAL,
-    alignment_probability REAL,
-    observed_alignment INTEGER
+    unit_id INTEGER NOT NULL,
+    oversight REAL NOT NULL,
+    enforcement REAL NOT NULL,
+    incentive_alignment REAL NOT NULL,
+    regulatory_burden REAL NOT NULL,
+    hypocrisy_visibility REAL NOT NULL,
+    unequal_accountability REAL NOT NULL,
+    accountability_score REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    information_quality REAL NOT NULL,
+    adaptive_learning REAL NOT NULL,
+    accountability_reach REAL NOT NULL,
+    capture_pressure REAL NOT NULL,
+    fragile_regulation INTEGER,
+    high_burden_regulation INTEGER,
+    PRIMARY KEY (period, unit_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_unit
-ON institutional_observations(unit_id);
+CREATE INDEX idx_regulatory_accountability_units_effectiveness
+ON regulatory_accountability_units (accountability_effectiveness);
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_period
-ON institutional_observations(period);
+CREATE INDEX idx_regulatory_accountability_units_high
+ON regulatory_accountability_units (high_accountability);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_unit
-ON compliance_records(unit_id);
+CREATE INDEX idx_regulatory_accountability_units_fragile
+ON regulatory_accountability_units (fragile_regulation);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_period
-ON compliance_records(period);
+CREATE INDEX idx_regulatory_accountability_units_burden
+ON regulatory_accountability_units (high_burden_regulation);
+
+CREATE INDEX idx_regulatory_accountability_periods_score
+ON regulatory_accountability_periods (accountability_score);

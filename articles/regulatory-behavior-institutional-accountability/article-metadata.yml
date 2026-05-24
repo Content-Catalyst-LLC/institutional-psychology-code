@@ -1,0 +1,53 @@
+title: "Regulatory Behavior and Institutional Accountability"
+slug: "regulatory-behavior-institutional-accountability"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/regulatory-behavior-institutional-accountability"
+article_url: "/regulatory-behavior-institutional-accountability/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - regulatory accountability modeling
+  - oversight and information-quality analysis
+  - enforcement-legitimacy interaction analysis
+  - capture-pressure diagnostics
+  - regulatory burden review
+  - accountability-reach analysis
+  - fragile regulation review
+  - high-burden regulatory-system review
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - regulatory accountability modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - ranking real people, firms, agencies, or communities

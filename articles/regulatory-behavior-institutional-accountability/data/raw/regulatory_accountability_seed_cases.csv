@@ -1,0 +1,6 @@
+unit_id,regulatory_domain,institutional_context,baseline_challenge,notes
+1,environmental_regulation,water_quality,monitoring_and_community_harm,synthetic seed case
+2,financial_governance,systemic_risk,capture_and_information_quality,synthetic seed case
+3,organizational_compliance,internal_reporting,defensive_documentation,synthetic seed case
+4,platform_governance,content_moderation,appeal_and_unequal_enforcement,synthetic seed case
+5,public_administration,benefit_eligibility,regulatory_burden_and_access,synthetic seed case
