@@ -1,0 +1,6 @@
+unit_id,collective_action_type,institutional_context,baseline_challenge,notes
+1,public_goods,public_health,free_riding_and_trust,synthetic seed case
+2,common_pool_resource,watershed_management,overuse_and_monitoring,synthetic seed case
+3,organizational_collaboration,knowledge_sharing,local_optimization,synthetic seed case
+4,collective_risk,climate_governance,long_horizon_commitment,synthetic seed case
+5,threshold_problem,open_source_infrastructure,critical_mass_and_maintenance,synthetic seed case

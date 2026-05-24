@@ -1,43 +1,61 @@
--- Article-level synthetic institutional psychology schema.
+-- Collective Action and Cooperation synthetic research schema.
+-- This schema is for demonstration and reproducible analysis only.
 
-CREATE TABLE IF NOT EXISTS institutional_observations (
-    observation_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
-    period INTEGER NOT NULL,
-    legitimacy_strength REAL,
-    normative_stability REAL,
-    trust_density REAL,
-    cognitive_processing_quality REAL,
-    information_flow_effectiveness REAL,
-    memory_retention REAL,
-    learning_capacity REAL,
-    fragmentation_pressure REAL,
-    institutional_effectiveness REAL,
-    high_alignment INTEGER
+DROP TABLE IF EXISTS collective_action_units;
+DROP TABLE IF EXISTS collective_action_periods;
+
+CREATE TABLE collective_action_units (
+    unit_id INTEGER PRIMARY KEY,
+    incentive_alignment REAL NOT NULL,
+    trust REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    norm_strength REAL NOT NULL,
+    enforcement_credibility REAL NOT NULL,
+    communication_quality REAL NOT NULL,
+    coordination_quality REAL NOT NULL,
+    perceived_fairness REAL NOT NULL,
+    free_riding_pressure REAL NOT NULL,
+    burden_inequality REAL NOT NULL,
+    hypocrisy_visibility REAL NOT NULL,
+    scale_complexity REAL NOT NULL,
+    cooperation_score REAL,
+    high_cooperation INTEGER,
+    fragile_cooperation INTEGER,
+    high_burden_cooperation INTEGER
 );
 
-CREATE TABLE IF NOT EXISTS compliance_records (
-    record_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
+CREATE TABLE collective_action_periods (
     period INTEGER NOT NULL,
-    perceived_legitimacy REAL,
-    expectation_of_others_compliance REAL,
-    procedural_trust REAL,
-    norm_support REAL,
-    role_identification REAL,
-    uncertainty_pressure REAL,
-    alignment_probability REAL,
-    observed_alignment INTEGER
+    agent_id INTEGER NOT NULL,
+    enforcement REAL NOT NULL,
+    communication REAL NOT NULL,
+    coordination REAL NOT NULL,
+    burden_inequality REAL NOT NULL,
+    hypocrisy_visibility REAL NOT NULL,
+    cooperate INTEGER NOT NULL,
+    cooperation_rate REAL NOT NULL,
+    collective_action_quality REAL NOT NULL,
+    trust REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    norm_strength REAL NOT NULL,
+    perceived_fairness REAL NOT NULL,
+    free_riding_pressure REAL NOT NULL,
+    fragile_collective_action INTEGER,
+    high_burden_collective_action INTEGER,
+    PRIMARY KEY (period, agent_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_unit
-ON institutional_observations(unit_id);
+CREATE INDEX idx_collective_action_units_score
+ON collective_action_units (cooperation_score);
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_period
-ON institutional_observations(period);
+CREATE INDEX idx_collective_action_units_high
+ON collective_action_units (high_cooperation);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_unit
-ON compliance_records(unit_id);
+CREATE INDEX idx_collective_action_units_fragile
+ON collective_action_units (fragile_cooperation);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_period
-ON compliance_records(period);
+CREATE INDEX idx_collective_action_units_burden
+ON collective_action_units (high_burden_cooperation);
+
+CREATE INDEX idx_collective_action_periods_quality
+ON collective_action_periods (collective_action_quality);
