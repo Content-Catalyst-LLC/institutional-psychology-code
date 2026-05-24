@@ -1,0 +1,53 @@
+title: "Behavioral Foundations of Governance Systems"
+slug: "behavioral-foundations-governance-systems"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/behavioral-foundations-governance-systems"
+article_url: "/behavioral-foundations-governance-systems/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - behavioral governance modeling
+  - legitimacy and trust analysis
+  - cognitive interpretability diagnostics
+  - enforcement-legitimacy interaction analysis
+  - adaptive learning simulation
+  - behavioral burden review
+  - fragile governance review
+  - high-burden governance review
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - behavioral governance modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - ranking real people or communities
