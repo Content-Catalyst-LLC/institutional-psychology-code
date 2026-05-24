@@ -1,0 +1,57 @@
+title: "Institutional Incentives and Behavioral Responses"
+slug: "institutional-incentives-behavioral-responses"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/institutional-incentives-behavioral-responses"
+article_url: "/institutional-incentives-behavioral-responses/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - incentive-effectiveness modeling
+  - behavioral response simulation
+  - value-alignment analysis
+  - fairness and legitimacy diagnostics
+  - information-quality review
+  - reporting-distortion analysis
+  - metric-substitution detection
+  - short-termism review
+  - behavioral-burden review
+  - status-inequality analysis
+  - fragile incentive-system review
+  - high-burden incentive-system review
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - incentive and behavioral response modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - ranking real people, firms, agencies, workers, students, or communities

@@ -1,0 +1,23 @@
+weights:
+  value_alignment: 0.14
+  fairness: 0.12
+  information_quality: 0.13
+  legitimacy: 0.12
+  learning_support: 0.12
+  accountability: 0.10
+  bias_pressure: -0.10
+  metric_substitution: -0.12
+  reporting_distortion: -0.09
+  behavioral_burden: -0.08
+  short_termism: -0.07
+  status_inequality: -0.06
+  motivation_crowding: -0.05
+thresholds:
+  high_alignment: 60
+  fragile_incentive_system_legitimacy: 40
+  high_burden_incentive_system_behavioral_burden: 65
+  high_burden_incentive_system_metric_substitution: 65
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High alignment indicators do not prove legitimacy, justice, or institutional value."
+  - "Measured performance should not automatically be treated as real public or institutional value."
