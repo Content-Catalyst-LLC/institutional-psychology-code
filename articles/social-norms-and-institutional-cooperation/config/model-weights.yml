@@ -1,0 +1,22 @@
+weights:
+  descriptive_norm: 0.14
+  injunctive_norm: 0.14
+  trust: 0.13
+  legitimacy: 0.12
+  sanction_intensity: 0.10
+  transmission_strength: 0.11
+  institutional_reinforcement: 0.12
+  norm_conflict: -0.13
+  hypocrisy_visibility: -0.08
+  unequal_enforcement: -0.07
+  performative_compliance: -0.05
+  distributional_attention: 0.04
+thresholds:
+  high_norm_compliance: 60
+  fragile_norm_environment_trust: 40
+  high_burden_norm_environment_unequal_enforcement: 65
+  high_burden_norm_environment_distributional_attention: 40
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High norm compliance does not prove legitimacy or fairness."
+  - "Dissent should not automatically be treated as norm violation."

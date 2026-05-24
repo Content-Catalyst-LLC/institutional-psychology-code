@@ -1,43 +1,61 @@
--- Article-level synthetic institutional psychology schema.
+-- Social Norms and Institutional Cooperation synthetic research schema.
+-- This schema is for demonstration and reproducible analysis only.
 
-CREATE TABLE IF NOT EXISTS institutional_observations (
-    observation_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
-    period INTEGER NOT NULL,
-    legitimacy_strength REAL,
-    normative_stability REAL,
-    trust_density REAL,
-    cognitive_processing_quality REAL,
-    information_flow_effectiveness REAL,
-    memory_retention REAL,
-    learning_capacity REAL,
-    fragmentation_pressure REAL,
-    institutional_effectiveness REAL,
-    high_alignment INTEGER
+DROP TABLE IF EXISTS social_norm_units;
+DROP TABLE IF EXISTS social_norm_periods;
+
+CREATE TABLE social_norm_units (
+    unit_id INTEGER PRIMARY KEY,
+    descriptive_norm REAL NOT NULL,
+    injunctive_norm REAL NOT NULL,
+    trust REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    sanction_intensity REAL NOT NULL,
+    transmission_strength REAL NOT NULL,
+    institutional_reinforcement REAL NOT NULL,
+    norm_conflict REAL NOT NULL,
+    hypocrisy_visibility REAL NOT NULL,
+    unequal_enforcement REAL NOT NULL,
+    performative_compliance REAL NOT NULL,
+    distributional_attention REAL NOT NULL,
+    cooperation_score REAL,
+    high_norm_compliance INTEGER,
+    fragile_norm_environment INTEGER,
+    high_burden_norm_environment INTEGER
 );
 
-CREATE TABLE IF NOT EXISTS compliance_records (
-    record_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
+CREATE TABLE social_norm_periods (
     period INTEGER NOT NULL,
-    perceived_legitimacy REAL,
-    expectation_of_others_compliance REAL,
-    procedural_trust REAL,
-    norm_support REAL,
-    role_identification REAL,
-    uncertainty_pressure REAL,
-    alignment_probability REAL,
-    observed_alignment INTEGER
+    agent_id INTEGER NOT NULL,
+    institutional_reinforcement REAL NOT NULL,
+    sanction_intensity REAL NOT NULL,
+    norm_conflict REAL NOT NULL,
+    hypocrisy_visibility REAL NOT NULL,
+    unequal_enforcement REAL NOT NULL,
+    distributional_attention REAL NOT NULL,
+    compliant INTEGER NOT NULL,
+    compliance_rate REAL NOT NULL,
+    norm_cooperation_quality REAL NOT NULL,
+    trust REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    descriptive_norm REAL NOT NULL,
+    injunctive_norm REAL NOT NULL,
+    fragile_norm_environment INTEGER,
+    high_burden_norm_environment INTEGER,
+    PRIMARY KEY (period, agent_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_unit
-ON institutional_observations(unit_id);
+CREATE INDEX idx_social_norm_units_score
+ON social_norm_units (cooperation_score);
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_period
-ON institutional_observations(period);
+CREATE INDEX idx_social_norm_units_high_compliance
+ON social_norm_units (high_norm_compliance);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_unit
-ON compliance_records(unit_id);
+CREATE INDEX idx_social_norm_units_fragile
+ON social_norm_units (fragile_norm_environment);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_period
-ON compliance_records(period);
+CREATE INDEX idx_social_norm_units_burden
+ON social_norm_units (high_burden_norm_environment);
+
+CREATE INDEX idx_social_norm_periods_quality
+ON social_norm_periods (norm_cooperation_quality);
