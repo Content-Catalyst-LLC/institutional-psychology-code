@@ -1,0 +1,39 @@
+bias_pressure_weights:
+  overconfidence: 0.12
+  anchoring_pressure: 0.11
+  confirmation_pressure: 0.11
+  conformity_pressure: 0.11
+  filtering_distortion: 0.12
+  path_lock_in: 0.10
+  metric_tunnel_vision: 0.09
+  power_protection: 0.08
+  dissent_capacity: -0.12
+  corrective_review: -0.11
+  information_quality: -0.11
+  feedback_openness: -0.10
+  psychological_safety: -0.08
+  justice_voice: -0.07
+decision_quality_weights:
+  dissent_capacity: 0.14
+  corrective_review: 0.14
+  information_quality: 0.14
+  feedback_openness: 0.13
+  psychological_safety: 0.11
+  justice_voice: 0.10
+  overconfidence: -0.13
+  conformity_pressure: -0.13
+  filtering_distortion: -0.14
+  path_lock_in: -0.12
+  metric_tunnel_vision: -0.10
+  power_protection: -0.09
+thresholds:
+  high_resilience_decision: 60
+  fragile_judgment_dissent_capacity: 40
+  fragile_judgment_filtering_distortion: 65
+  high_bias_environment_bias_pressure: 65
+  high_bias_environment_corrective_review: 40
+  high_bias_environment_feedback_openness: 40
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High decision-quality indicators do not prove justice, rationality, or institutional wisdom."
+  - "Bias language should never be used to suppress dissent or affected-community evidence."
