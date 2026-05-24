@@ -1,0 +1,59 @@
+title: "Information Flow and Organizational Communication"
+slug: "information-flow-organizational-communication"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/information-flow-organizational-communication"
+article_url: "/information-flow-organizational-communication/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - institutional communication modeling
+  - information-flow simulation
+  - signal-quality analysis
+  - communication-quality diagnostics
+  - interpretive-integration assessment
+  - feedback-memory interaction analysis
+  - escalation-access review
+  - openness and trust modeling
+  - community-voice review
+  - digital-transparency analysis
+  - distortion-loss sensitivity analysis
+  - overload and attention-burden analysis
+  - fragile communication review
+  - high-overload communication review
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - information-flow and communication modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - ranking real people, firms, agencies, workers, students, or communities

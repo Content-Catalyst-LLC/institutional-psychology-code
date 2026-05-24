@@ -1,0 +1,26 @@
+weights:
+  signal_quality: 0.12
+  communication_quality: 0.12
+  interpretive_integration: 0.12
+  feedback_usability: 0.11
+  memory_retention: 0.10
+  openness: 0.11
+  escalation_access: 0.09
+  trust: 0.08
+  community_voice: 0.07
+  digital_transparency: 0.07
+  distortion_loss: -0.12
+  overload: -0.09
+  siloing: -0.08
+  suppression_pressure: -0.08
+  metric_tunnel_vision: -0.07
+thresholds:
+  high_integration: 60
+  fragile_communication_openness: 40
+  fragile_communication_distortion_loss: 65
+  high_overload_system_overload: 70
+  high_overload_system_metric_tunnel_vision: 65
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High integration indicators do not prove truth, justice, or institutional understanding."
+  - "Communication volume should not automatically be treated as communication quality."
