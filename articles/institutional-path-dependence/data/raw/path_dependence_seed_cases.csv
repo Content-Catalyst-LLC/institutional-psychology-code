@@ -1,0 +1,6 @@
+institution_id,institution_type,path_type,baseline_lock_in,notes
+1,public_governance,legal_administrative,high,synthetic seed case
+2,public_health,organizational_routine,medium,synthetic seed case
+3,education,policy_and_funding_formula,high,synthetic seed case
+4,infrastructure,technical_network,high,synthetic seed case
+5,financial_regulation,regulatory_architecture,medium,synthetic seed case

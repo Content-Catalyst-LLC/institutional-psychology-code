@@ -1,0 +1,21 @@
+weights:
+  initial_conditions: 0.08
+  behavioral_reinforcement: 0.12
+  feedback_strength: 0.12
+  increasing_returns: 0.13
+  coordination_effects: 0.11
+  learning_effects: 0.10
+  legitimacy: 0.12
+  switching_costs: 0.12
+  complementarity: 0.10
+  disruption_pressure: -0.12
+  reform_capacity: -0.05
+thresholds:
+  lock_in: 60
+  strong_lock_in: 75
+  high_burden_lock_in_path_score: 60
+  high_distributional_burden: 65
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High path dependence does not imply the institution is effective or legitimate."
+  - "Distributional burden should be reviewed qualitatively, not only numerically."

@@ -1,43 +1,56 @@
--- Article-level synthetic institutional psychology schema.
+-- Institutional Path Dependence synthetic research schema.
+-- This schema is for demonstration and reproducible analysis only.
 
-CREATE TABLE IF NOT EXISTS institutional_observations (
-    observation_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
-    period INTEGER NOT NULL,
-    legitimacy_strength REAL,
-    normative_stability REAL,
-    trust_density REAL,
-    cognitive_processing_quality REAL,
-    information_flow_effectiveness REAL,
-    memory_retention REAL,
-    learning_capacity REAL,
-    fragmentation_pressure REAL,
-    institutional_effectiveness REAL,
-    high_alignment INTEGER
+DROP TABLE IF EXISTS path_dependence_cases;
+DROP TABLE IF EXISTS path_dependence_periods;
+
+CREATE TABLE path_dependence_cases (
+    institution_id INTEGER PRIMARY KEY,
+    initial_conditions REAL NOT NULL,
+    behavioral_reinforcement REAL NOT NULL,
+    feedback_strength REAL NOT NULL,
+    increasing_returns REAL NOT NULL,
+    coordination_effects REAL NOT NULL,
+    learning_effects REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    switching_costs REAL NOT NULL,
+    complementarity REAL NOT NULL,
+    disruption_pressure REAL NOT NULL,
+    reform_capacity REAL NOT NULL,
+    distributional_burden REAL NOT NULL,
+    path_dependence_score REAL,
+    lock_in INTEGER,
+    strong_lock_in INTEGER,
+    high_burden_lock_in INTEGER
 );
 
-CREATE TABLE IF NOT EXISTS compliance_records (
-    record_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
+CREATE TABLE path_dependence_periods (
     period INTEGER NOT NULL,
-    perceived_legitimacy REAL,
-    expectation_of_others_compliance REAL,
-    procedural_trust REAL,
-    norm_support REAL,
-    role_identification REAL,
-    uncertainty_pressure REAL,
-    alignment_probability REAL,
-    observed_alignment INTEGER
+    institution_id INTEGER NOT NULL,
+    disruption_pressure REAL NOT NULL,
+    path_strength REAL NOT NULL,
+    stay_probability REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    switching_costs REAL NOT NULL,
+    increasing_returns REAL NOT NULL,
+    coordination_effects REAL NOT NULL,
+    learning_effects REAL NOT NULL,
+    complementarity REAL NOT NULL,
+    reform_capacity REAL NOT NULL,
+    distributional_burden REAL NOT NULL,
+    strong_lock_in INTEGER,
+    high_burden_lock_in INTEGER,
+    PRIMARY KEY (period, institution_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_unit
-ON institutional_observations(unit_id);
+CREATE INDEX idx_path_cases_score
+ON path_dependence_cases (path_dependence_score);
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_period
-ON institutional_observations(period);
+CREATE INDEX idx_path_cases_lock_in
+ON path_dependence_cases (lock_in);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_unit
-ON compliance_records(unit_id);
+CREATE INDEX idx_path_cases_burden
+ON path_dependence_cases (distributional_burden);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_period
-ON compliance_records(period);
+CREATE INDEX idx_path_periods_stay_probability
+ON path_dependence_periods (stay_probability);
