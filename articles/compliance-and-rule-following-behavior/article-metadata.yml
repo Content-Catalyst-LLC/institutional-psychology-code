@@ -1,0 +1,55 @@
+title: "Compliance and Rule-Following Behavior"
+slug: "compliance-and-rule-following-behavior"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/compliance-and-rule-following-behavior"
+article_url: "/compliance-and-rule-following-behavior/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - compliance-quality modeling
+  - rule-following simulation
+  - legitimacy and fairness analysis
+  - norm support and trust analysis
+  - enforcement-legitimacy interaction analysis
+  - clarity-burden interaction analysis
+  - compliance-burden review
+  - selective rule-application analysis
+  - fragile compliance review
+  - high-burden compliance review
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - compliance and rule-following modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - ranking real people, firms, agencies, or communities

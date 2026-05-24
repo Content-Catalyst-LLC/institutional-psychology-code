@@ -1,0 +1,24 @@
+weights:
+  legitimacy: 0.13
+  fairness: 0.13
+  incentive_alignment: 0.11
+  norm_support: 0.11
+  enforcement_credibility: 0.10
+  communication_quality: 0.11
+  cognitive_clarity: 0.12
+  trust: 0.11
+  adaptive_learning: 0.09
+  compliance_burden: -0.11
+  selective_rule_application: -0.08
+  defensive_compliance: -0.06
+  hypocrisy_visibility: -0.05
+  norm_failure: -0.05
+thresholds:
+  high_compliance: 60
+  fragile_compliance_legitimacy: 40
+  high_burden_compliance_compliance_burden: 65
+  high_burden_compliance_selective_rule_application: 65
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High compliance indicators do not prove legitimacy or fairness."
+  - "Noncompliance should not automatically be treated as individual deviance."
