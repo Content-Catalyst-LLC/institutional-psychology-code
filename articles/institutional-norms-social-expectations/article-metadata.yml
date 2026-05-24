@@ -1,0 +1,56 @@
+title: "Institutional Norms and Social Expectations"
+slug: "institutional-norms-social-expectations"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/institutional-norms-social-expectations"
+article_url: "/institutional-norms-and-social-expectations/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - institutional norm modeling
+  - expectation-convergence analysis
+  - normative-stability simulation
+  - compliance and coordination modeling
+  - social-enforcement diagnostics
+  - suppressive norm-environment review
+  - norm-change readiness analysis
+  - unequal normative burden review
+  - legitimacy-alignment modeling
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - norms, expectations, compliance, and coordination modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - norm scoring real people or communities
+    - conformity scoring real people or communities
+    - ranking real people, firms, agencies, workers, students, or communities

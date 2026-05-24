@@ -1,0 +1,30 @@
+normative_stability_weights:
+  norm_repetition: 0.13
+  expectation_convergence: 0.14
+  internalization: 0.13
+  social_enforcement: 0.11
+  legitimacy_alignment: 0.13
+  trust_reinforcement: 0.11
+  role_clarity: 0.09
+  learning_capacity: 0.08
+  fragmentation_pressure: -0.13
+  unequal_normative_burden: -0.10
+  suppressive_pressure: -0.08
+norm_change_readiness_weights:
+  alternative_norm_visibility: 0.16
+  learning_capacity: 0.14
+  legitimacy_alignment: 0.12
+  sanction_cost: -0.15
+  rigidity_pressure: -0.12
+  suppressive_pressure: -0.10
+thresholds:
+  high_coordination: 60
+  fragile_normative_expectation_convergence: 40
+  fragile_normative_legitimacy_alignment: 40
+  suppressive_norm_social_enforcement: 70
+  suppressive_norm_suppressive_pressure: 65
+  suppressive_norm_learning_capacity: 40
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "Normative-stability scores do not prove justice, consent, legitimacy, or institutional health."
+  - "Norm models should not replace rights, appeal, accountability, repair, or affected-community participation."
