@@ -1,43 +1,58 @@
--- Article-level synthetic institutional psychology schema.
+-- Institutional Responses to Public Goods Problems synthetic research schema.
+-- This schema is for demonstration and reproducible analysis only.
 
-CREATE TABLE IF NOT EXISTS institutional_observations (
-    observation_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
-    period INTEGER NOT NULL,
-    legitimacy_strength REAL,
-    normative_stability REAL,
-    trust_density REAL,
-    cognitive_processing_quality REAL,
-    information_flow_effectiveness REAL,
-    memory_retention REAL,
-    learning_capacity REAL,
-    fragmentation_pressure REAL,
-    institutional_effectiveness REAL,
-    high_alignment INTEGER
+DROP TABLE IF EXISTS public_goods_units;
+DROP TABLE IF EXISTS public_goods_periods;
+
+CREATE TABLE public_goods_units (
+    unit_id INTEGER PRIMARY KEY,
+    trust REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    enforcement REAL NOT NULL,
+    norm_strength REAL NOT NULL,
+    coordination REAL NOT NULL,
+    monitoring REAL NOT NULL,
+    selective_incentives REAL NOT NULL,
+    scale_complexity REAL NOT NULL,
+    perceived_fairness REAL NOT NULL,
+    capture_risk REAL NOT NULL,
+    distributional_attention REAL NOT NULL,
+    contribution_rate REAL,
+    provision_quality REAL,
+    high_provision INTEGER,
+    fragile_public_good INTEGER,
+    high_burden_risk INTEGER
 );
 
-CREATE TABLE IF NOT EXISTS compliance_records (
-    record_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
+CREATE TABLE public_goods_periods (
     period INTEGER NOT NULL,
-    perceived_legitimacy REAL,
-    expectation_of_others_compliance REAL,
-    procedural_trust REAL,
-    norm_support REAL,
-    role_identification REAL,
-    uncertainty_pressure REAL,
-    alignment_probability REAL,
-    observed_alignment INTEGER
+    agent_id INTEGER NOT NULL,
+    enforcement REAL NOT NULL,
+    monitoring REAL NOT NULL,
+    scale_complexity REAL NOT NULL,
+    institutional_competence REAL NOT NULL,
+    contribution INTEGER NOT NULL,
+    provision_level REAL NOT NULL,
+    provision_quality REAL NOT NULL,
+    trust REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    norm_strength REAL NOT NULL,
+    perceived_fairness REAL NOT NULL,
+    free_ride_opportunity REAL NOT NULL,
+    PRIMARY KEY (period, agent_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_unit
-ON institutional_observations(unit_id);
+CREATE INDEX idx_public_goods_units_provision
+ON public_goods_units (provision_quality);
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_period
-ON institutional_observations(period);
+CREATE INDEX idx_public_goods_units_legitimacy
+ON public_goods_units (legitimacy);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_unit
-ON compliance_records(unit_id);
+CREATE INDEX idx_public_goods_units_fragile
+ON public_goods_units (fragile_public_good);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_period
-ON compliance_records(period);
+CREATE INDEX idx_public_goods_units_burden
+ON public_goods_units (high_burden_risk);
+
+CREATE INDEX idx_public_goods_periods_provision
+ON public_goods_periods (provision_quality);

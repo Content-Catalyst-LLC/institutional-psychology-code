@@ -1,0 +1,6 @@
+unit_id,public_good_type,governance_scale,baseline_challenge,notes
+1,public_health_surveillance,national,high_free_riding_risk,synthetic seed case
+2,open_source_software,global,maintenance_underfunding,synthetic seed case
+3,watershed_protection,regional,monitoring_and_boundary_challenge,synthetic seed case
+4,urban_infrastructure,municipal,distributional_burden,synthetic seed case
+5,climate_mitigation,global,scale_and_enforcement_challenge,synthetic seed case

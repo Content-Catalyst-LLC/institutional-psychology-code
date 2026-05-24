@@ -1,0 +1,27 @@
+weights:
+  contribution_trust: 0.15
+  contribution_legitimacy: 0.14
+  contribution_enforcement: 0.12
+  contribution_norm_strength: 0.11
+  contribution_coordination: 0.10
+  contribution_monitoring: 0.10
+  contribution_selective_incentives: 0.09
+  contribution_perceived_fairness: 0.08
+  contribution_scale_complexity: -0.12
+  contribution_capture_risk: -0.07
+  provision_contribution_rate: 0.22
+  provision_legitimacy: 0.13
+  provision_trust: 0.12
+  provision_coordination: 0.11
+  provision_monitoring: 0.10
+  provision_distributional_attention: 0.08
+  provision_scale_complexity: -0.12
+  provision_capture_risk: -0.08
+thresholds:
+  high_provision: 60
+  fragile_public_good_legitimacy: 40
+  high_burden_risk_distributional_attention: 35
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High provision does not prove legitimacy or fairness."
+  - "Free-riding indicators require qualitative interpretation."
