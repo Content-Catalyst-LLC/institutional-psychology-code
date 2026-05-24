@@ -1,0 +1,53 @@
+title: "Institutional Enforcement and Behavioral Incentives"
+slug: "institutional-enforcement-behavioral-incentives"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/institutional-enforcement-behavioral-incentives"
+article_url: "/institutional-enforcement-behavioral-incentives/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - enforcement-effectiveness modeling
+  - monitoring and information-quality analysis
+  - sanction-legitimacy interaction analysis
+  - adaptive-evasion diagnostics
+  - compliance-burden review
+  - selective-enforcement analysis
+  - fragile enforcement review
+  - high-burden enforcement review
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - enforcement and incentive modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - ranking real people, firms, agencies, or communities

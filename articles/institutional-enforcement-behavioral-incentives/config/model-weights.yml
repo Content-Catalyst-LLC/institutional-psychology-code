@@ -1,0 +1,22 @@
+weights:
+  monitoring_quality: 0.13
+  legitimacy: 0.13
+  incentive_alignment: 0.12
+  sanction_credibility: 0.12
+  information_quality: 0.13
+  adaptive_learning: 0.11
+  accountability_reach: 0.10
+  compliance_burden: -0.08
+  selective_enforcement: -0.08
+  evasion_pressure: -0.12
+  hypocrisy_visibility: -0.06
+  defensive_compliance: -0.06
+thresholds:
+  high_compliance_quality: 60
+  fragile_enforcement_legitimacy: 40
+  high_burden_enforcement_compliance_burden: 65
+  high_burden_enforcement_selective_enforcement: 65
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High enforcement indicators do not prove legitimacy or fairness."
+  - "Noncompliance should not automatically be treated as evasion."

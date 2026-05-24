@@ -1,43 +1,60 @@
--- Article-level synthetic institutional psychology schema.
+-- Institutional Enforcement and Behavioral Incentives synthetic research schema.
+-- This schema is for demonstration and reproducible analysis only.
 
-CREATE TABLE IF NOT EXISTS institutional_observations (
-    observation_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
-    period INTEGER NOT NULL,
-    legitimacy_strength REAL,
-    normative_stability REAL,
-    trust_density REAL,
-    cognitive_processing_quality REAL,
-    information_flow_effectiveness REAL,
-    memory_retention REAL,
-    learning_capacity REAL,
-    fragmentation_pressure REAL,
-    institutional_effectiveness REAL,
-    high_alignment INTEGER
+DROP TABLE IF EXISTS institutional_enforcement_units;
+DROP TABLE IF EXISTS institutional_enforcement_periods;
+
+CREATE TABLE institutional_enforcement_units (
+    unit_id INTEGER PRIMARY KEY,
+    monitoring_quality REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    incentive_alignment REAL NOT NULL,
+    sanction_credibility REAL NOT NULL,
+    information_quality REAL NOT NULL,
+    adaptive_learning REAL NOT NULL,
+    accountability_reach REAL NOT NULL,
+    compliance_burden REAL NOT NULL,
+    selective_enforcement REAL NOT NULL,
+    evasion_pressure REAL NOT NULL,
+    hypocrisy_visibility REAL NOT NULL,
+    defensive_compliance REAL NOT NULL,
+    enforcement_effectiveness REAL,
+    high_compliance_quality INTEGER,
+    fragile_enforcement INTEGER,
+    high_burden_enforcement INTEGER
 );
 
-CREATE TABLE IF NOT EXISTS compliance_records (
-    record_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
+CREATE TABLE institutional_enforcement_periods (
     period INTEGER NOT NULL,
-    perceived_legitimacy REAL,
-    expectation_of_others_compliance REAL,
-    procedural_trust REAL,
-    norm_support REAL,
-    role_identification REAL,
-    uncertainty_pressure REAL,
-    alignment_probability REAL,
-    observed_alignment INTEGER
+    unit_id INTEGER NOT NULL,
+    monitoring REAL NOT NULL,
+    sanctions REAL NOT NULL,
+    incentive_alignment REAL NOT NULL,
+    compliance_burden REAL NOT NULL,
+    selective_enforcement REAL NOT NULL,
+    hypocrisy_visibility REAL NOT NULL,
+    enforcement_score REAL NOT NULL,
+    legitimacy REAL NOT NULL,
+    information_quality REAL NOT NULL,
+    adaptive_learning REAL NOT NULL,
+    accountability_reach REAL NOT NULL,
+    evasion_pressure REAL NOT NULL,
+    fragile_enforcement INTEGER,
+    high_burden_enforcement INTEGER,
+    PRIMARY KEY (period, unit_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_unit
-ON institutional_observations(unit_id);
+CREATE INDEX idx_institutional_enforcement_units_effectiveness
+ON institutional_enforcement_units (enforcement_effectiveness);
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_period
-ON institutional_observations(period);
+CREATE INDEX idx_institutional_enforcement_units_high
+ON institutional_enforcement_units (high_compliance_quality);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_unit
-ON compliance_records(unit_id);
+CREATE INDEX idx_institutional_enforcement_units_fragile
+ON institutional_enforcement_units (fragile_enforcement);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_period
-ON compliance_records(period);
+CREATE INDEX idx_institutional_enforcement_units_burden
+ON institutional_enforcement_units (high_burden_enforcement);
+
+CREATE INDEX idx_institutional_enforcement_periods_score
+ON institutional_enforcement_periods (enforcement_score);
