@@ -1,43 +1,61 @@
--- Article-level synthetic institutional psychology schema.
+-- Coordination Problems in Institutional Systems synthetic research schema.
+-- This schema is for demonstration and reproducible analysis only.
 
-CREATE TABLE IF NOT EXISTS institutional_observations (
-    observation_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
-    period INTEGER NOT NULL,
-    legitimacy_strength REAL,
-    normative_stability REAL,
-    trust_density REAL,
-    cognitive_processing_quality REAL,
-    information_flow_effectiveness REAL,
-    memory_retention REAL,
-    learning_capacity REAL,
-    fragmentation_pressure REAL,
-    institutional_effectiveness REAL,
-    high_alignment INTEGER
+DROP TABLE IF EXISTS coordination_units;
+DROP TABLE IF EXISTS coordination_periods;
+
+CREATE TABLE coordination_units (
+    unit_id INTEGER PRIMARY KEY,
+    trust REAL NOT NULL,
+    information_quality REAL NOT NULL,
+    communication_clarity REAL NOT NULL,
+    focal_salience REAL NOT NULL,
+    authority_signal REAL NOT NULL,
+    norm_strength REAL NOT NULL,
+    learning_capacity REAL NOT NULL,
+    uncertainty REAL NOT NULL,
+    adaptation_burden REAL NOT NULL,
+    competing_standards REAL NOT NULL,
+    competing_authority REAL NOT NULL,
+    distributional_attention REAL NOT NULL,
+    coordination_quality REAL,
+    high_alignment INTEGER,
+    fragile_coordination INTEGER,
+    high_burden_coordination INTEGER
 );
 
-CREATE TABLE IF NOT EXISTS compliance_records (
-    record_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
+CREATE TABLE coordination_periods (
     period INTEGER NOT NULL,
-    perceived_legitimacy REAL,
-    expectation_of_others_compliance REAL,
-    procedural_trust REAL,
-    norm_support REAL,
-    role_identification REAL,
-    uncertainty_pressure REAL,
-    alignment_probability REAL,
-    observed_alignment INTEGER
+    agent_id INTEGER NOT NULL,
+    communication REAL NOT NULL,
+    authority REAL NOT NULL,
+    information_quality REAL NOT NULL,
+    uncertainty REAL NOT NULL,
+    competing_standards REAL NOT NULL,
+    adaptation_burden REAL NOT NULL,
+    aligned INTEGER NOT NULL,
+    coordination_rate REAL NOT NULL,
+    coordination_quality REAL NOT NULL,
+    trust REAL NOT NULL,
+    focal_salience REAL NOT NULL,
+    norm_strength REAL NOT NULL,
+    adaptation_capacity REAL NOT NULL,
+    fragile_coordination INTEGER,
+    high_burden_coordination INTEGER,
+    PRIMARY KEY (period, agent_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_unit
-ON institutional_observations(unit_id);
+CREATE INDEX idx_coordination_units_quality
+ON coordination_units (coordination_quality);
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_period
-ON institutional_observations(period);
+CREATE INDEX idx_coordination_units_high_alignment
+ON coordination_units (high_alignment);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_unit
-ON compliance_records(unit_id);
+CREATE INDEX idx_coordination_units_fragile
+ON coordination_units (fragile_coordination);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_period
-ON compliance_records(period);
+CREATE INDEX idx_coordination_units_burden
+ON coordination_units (high_burden_coordination);
+
+CREATE INDEX idx_coordination_periods_quality
+ON coordination_periods (coordination_quality);

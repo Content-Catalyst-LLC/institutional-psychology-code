@@ -1,0 +1,22 @@
+weights:
+  trust: 0.14
+  information_quality: 0.14
+  communication_clarity: 0.13
+  focal_salience: 0.12
+  authority_signal: 0.10
+  norm_strength: 0.10
+  learning_capacity: 0.09
+  uncertainty: -0.13
+  adaptation_burden: -0.07
+  competing_standards: -0.06
+  competing_authority: -0.05
+  distributional_attention: 0.04
+thresholds:
+  high_alignment: 60
+  fragile_coordination_trust: 40
+  high_burden_coordination_adaptation_burden: 65
+  high_burden_coordination_distributional_attention: 40
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High coordination does not prove legitimacy or fairness."
+  - "Dissent should not automatically be treated as miscoordination."

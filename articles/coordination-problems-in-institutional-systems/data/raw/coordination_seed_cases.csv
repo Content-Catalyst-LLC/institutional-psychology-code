@@ -1,0 +1,6 @@
+unit_id,coordination_type,governance_scale,baseline_challenge,notes
+1,emergency_response,regional,timing_and_authority_ambiguity,synthetic seed case
+2,data_interoperability,interagency,competing_standards,synthetic seed case
+3,public_health_guidance,national,trust_and_signal_clarity,synthetic seed case
+4,technology_standard,market,standard_adoption_threshold,synthetic seed case
+5,climate_governance,global,fragmented_authority,synthetic seed case

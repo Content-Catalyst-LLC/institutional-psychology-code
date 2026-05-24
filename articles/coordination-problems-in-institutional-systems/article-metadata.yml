@@ -1,0 +1,53 @@
+title: "Coordination Problems in Institutional Systems"
+slug: "coordination-problems-in-institutional-systems"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/coordination-problems-in-institutional-systems"
+article_url: "/coordination-problems-in-institutional-systems/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - coordination quality modeling
+  - expectation alignment simulation
+  - focal point analysis
+  - trust and communication diagnostics
+  - authority signal analysis
+  - fragile coordination review
+  - high burden coordination review
+  - competing standards sensitivity analysis
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - coordination systems modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - ranking real people or communities
