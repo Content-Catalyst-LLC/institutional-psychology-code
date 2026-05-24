@@ -1,0 +1,6 @@
+case_id,institution_type,crisis_type,baseline_risk,notes
+1,public_governance,legitimacy_crisis,high,synthetic seed case
+2,public_health,capacity_breakdown,high,synthetic seed case
+3,financial_regulation,systemic_failure,medium,synthetic seed case
+4,infrastructure,cascading_failure,high,synthetic seed case
+5,education,trust_and_governance_crisis,medium,synthetic seed case
