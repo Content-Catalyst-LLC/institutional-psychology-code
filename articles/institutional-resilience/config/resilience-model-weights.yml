@@ -1,0 +1,19 @@
+weights:
+  robustness: 0.10
+  adaptive_capacity: 0.12
+  recovery_capacity: 0.10
+  transformational_capacity: 0.08
+  legitimacy: 0.12
+  trust: 0.10
+  feedback_quality: 0.10
+  learning_rate: 0.08
+  redundancy: 0.07
+  modularity: 0.05
+  coordination: 0.08
+  shock_intensity: -0.10
+thresholds:
+  maintained_core_function: 55
+  failure_continuity_threshold: 40
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "Real-world use requires domain review, ethical review, and sensitivity analysis."

@@ -1,0 +1,46 @@
+title: "Institutional Resilience"
+slug: "institutional-resilience"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/institutional-resilience"
+article_url: "/institutional-resilience/"
+status: "companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - resilience index construction
+  - stress testing
+  - scenario analysis
+  - simulation
+  - SQL analytics
+  - reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - resilience modeling
+    - public-interest analysis
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - coercive public administration
+    - automated eligibility determination

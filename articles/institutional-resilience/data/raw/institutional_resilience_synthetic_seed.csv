@@ -1,0 +1,6 @@
+institution_id,institution_type,region,baseline_risk
+1,public_governance,north,medium
+2,public_health,east,high
+3,infrastructure,west,high
+4,financial_regulation,central,medium
+5,education,south,low
