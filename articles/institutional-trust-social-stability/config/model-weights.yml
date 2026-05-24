@@ -1,0 +1,34 @@
+trust_score_weights:
+  consistency: 0.11
+  competence: 0.12
+  fairness: 0.14
+  transparency: 0.10
+  accountability: 0.13
+  integrity: 0.12
+  recognition_voice: 0.09
+  repair_capacity: 0.09
+  arbitrariness_pressure: -0.13
+  visible_violation_pressure: -0.11
+  administrative_burden: -0.08
+social_stability_weights:
+  trust_score: 0.18
+  legitimacy: 0.14
+  voluntary_compliance: 0.13
+  cooperation_capacity: 0.12
+  learning_repair: 0.10
+  repair_capacity: 0.08
+  arbitrariness_pressure: -0.12
+  fragmentation_pressure: -0.10
+  visible_violation_pressure: -0.08
+thresholds:
+  high_trust: 60
+  high_stability: 60
+  fragile_trust_fairness: 40
+  fragile_trust_accountability: 40
+  high_distrust_arbitrariness: 70
+  high_distrust_visible_violation: 65
+  high_distrust_repair_capacity: 40
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "Trust scores do not prove legitimacy, justice, competence, or institutional trustworthiness."
+  - "Trust models should not replace rights, appeal, accountability, repair, or affected-community participation."

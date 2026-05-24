@@ -1,0 +1,57 @@
+title: "Institutional Trust and Social Stability"
+slug: "institutional-trust-social-stability"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/institutional-trust-social-stability"
+article_url: "/institutional-trust-and-social-stability/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - institutional trust modeling
+  - social-stability simulation
+  - legitimacy analysis
+  - voluntary-compliance modeling
+  - fairness and accountability diagnostics
+  - recognition-and-voice modeling
+  - repair-capacity review
+  - administrative-burden analysis
+  - fragile trust-environment review
+  - high-distrust pressure review
+  - trust-repair sensitivity analysis
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - trust, legitimacy, and social-stability modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - trust scoring real people or communities
+    - ranking real people, firms, agencies, workers, students, or communities
