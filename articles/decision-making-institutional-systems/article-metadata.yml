@@ -1,0 +1,58 @@
+title: "Decision-Making in Institutional Systems"
+slug: "decision-making-institutional-systems"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/decision-making-institutional-systems"
+article_url: "/decision-making-in-institutional-systems/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - institutional decision-quality modeling
+  - bounded-rationality pressure analysis
+  - organizational-structure diagnostics
+  - incentive-alignment analysis
+  - information-flow analysis
+  - legitimacy and procedural-fairness modeling
+  - uncertainty-management simulation
+  - corrective-capacity review
+  - justice-sensitive voice modeling
+  - memory and feedback-openness analysis
+  - fragile decision-environment review
+  - high-distortion environment review
+  - decision architecture sensitivity analysis
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - decision-quality and governance modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - ranking real people, firms, agencies, workers, students, or communities

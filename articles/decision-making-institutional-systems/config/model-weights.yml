@@ -1,0 +1,27 @@
+decision_quality_weights:
+  organizational_structure_quality: 0.12
+  incentive_alignment: 0.12
+  information_flow_effectiveness: 0.13
+  legitimacy: 0.11
+  uncertainty_management: 0.11
+  corrective_capacity: 0.13
+  justice_voice: 0.09
+  memory_quality: 0.08
+  feedback_openness: 0.08
+  bounded_rationality_pressure: -0.13
+  bias_distortion: -0.11
+  power_protection: -0.09
+  metric_fixation: -0.08
+  siloing: -0.07
+  premature_closure: -0.07
+thresholds:
+  high_quality_decision: 60
+  fragile_decision_environment_corrective_capacity: 40
+  fragile_decision_environment_information_flow: 45
+  high_distortion_environment_bias_distortion: 70
+  high_distortion_environment_power_protection: 65
+  high_distortion_environment_feedback_openness: 40
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "Decision-quality scores do not prove justice, rationality, competence, or institutional wisdom."
+  - "Decision models should not replace participatory governance or affected-community accountability."
