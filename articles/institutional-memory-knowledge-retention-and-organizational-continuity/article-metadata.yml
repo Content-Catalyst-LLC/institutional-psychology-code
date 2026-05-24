@@ -1,0 +1,55 @@
+title: "Institutional Memory: Knowledge Retention and Organizational Continuity"
+slug: "institutional-memory-knowledge-retention-and-organizational-continuity"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/institutional-memory-knowledge-retention-and-organizational-continuity"
+article_url: "/institutional-memory-knowledge-retention-and-organizational-continuity/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - institutional memory modeling
+  - archive-quality analysis
+  - tacit-transfer diagnostics
+  - accessibility and metadata review
+  - path-dependence analysis
+  - memory-fragility assessment
+  - memory-justice review
+  - selective-narration analysis
+  - key-person dependency review
+  - knowledge-loss sensitivity analysis
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - memory and continuity modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - ranking real people, firms, agencies, workers, students, or communities

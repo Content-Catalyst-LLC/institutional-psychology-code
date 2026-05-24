@@ -1,0 +1,25 @@
+weights:
+  documented_retention: 0.12
+  tacit_transfer: 0.12
+  accessibility: 0.12
+  interpretive_use: 0.12
+  revisability: 0.11
+  technical_continuity: 0.09
+  metadata_quality: 0.08
+  distributed_integration: 0.08
+  memory_justice: 0.08
+  path_dependence_pressure: -0.11
+  loss_fragmentation: -0.11
+  selective_narration: -0.08
+  turnover_pressure: -0.07
+  key_person_dependency: -0.06
+thresholds:
+  high_resilience_memory: 60
+  fragile_memory_documented_retention: 40
+  fragile_memory_tacit_transfer: 40
+  high_path_dependence_memory_path_dependence_pressure: 65
+  high_path_dependence_memory_revisability: 40
+notes:
+  - "Weights are illustrative and should not be treated as validated empirical parameters."
+  - "High memory indicators do not prove justice, truth, or institutional wisdom."
+  - "Official memory should not automatically be treated as complete memory."

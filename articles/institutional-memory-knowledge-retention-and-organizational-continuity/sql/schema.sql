@@ -1,43 +1,64 @@
--- Article-level synthetic institutional psychology schema.
+-- Institutional Memory, Knowledge Retention, and Organizational Continuity synthetic research schema.
+-- This schema is for demonstration and reproducible analysis only.
 
-CREATE TABLE IF NOT EXISTS institutional_observations (
-    observation_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
-    period INTEGER NOT NULL,
-    legitimacy_strength REAL,
-    normative_stability REAL,
-    trust_density REAL,
-    cognitive_processing_quality REAL,
-    information_flow_effectiveness REAL,
-    memory_retention REAL,
-    learning_capacity REAL,
-    fragmentation_pressure REAL,
-    institutional_effectiveness REAL,
-    high_alignment INTEGER
+DROP TABLE IF EXISTS institutional_memory_units;
+DROP TABLE IF EXISTS institutional_memory_periods;
+
+CREATE TABLE institutional_memory_units (
+    unit_id INTEGER PRIMARY KEY,
+    documented_retention REAL NOT NULL,
+    tacit_transfer REAL NOT NULL,
+    accessibility REAL NOT NULL,
+    interpretive_use REAL NOT NULL,
+    revisability REAL NOT NULL,
+    technical_continuity REAL NOT NULL,
+    metadata_quality REAL NOT NULL,
+    distributed_integration REAL NOT NULL,
+    memory_justice REAL NOT NULL,
+    path_dependence_pressure REAL NOT NULL,
+    loss_fragmentation REAL NOT NULL,
+    selective_narration REAL NOT NULL,
+    turnover_pressure REAL NOT NULL,
+    key_person_dependency REAL NOT NULL,
+    memory_effectiveness REAL,
+    high_resilience_memory INTEGER,
+    fragile_memory INTEGER,
+    high_path_dependence_memory INTEGER
 );
 
-CREATE TABLE IF NOT EXISTS compliance_records (
-    record_id INTEGER PRIMARY KEY,
-    unit_id TEXT NOT NULL,
+CREATE TABLE institutional_memory_periods (
     period INTEGER NOT NULL,
-    perceived_legitimacy REAL,
-    expectation_of_others_compliance REAL,
-    procedural_trust REAL,
-    norm_support REAL,
-    role_identification REAL,
-    uncertainty_pressure REAL,
-    alignment_probability REAL,
-    observed_alignment INTEGER
+    unit_id INTEGER NOT NULL,
+    interpretive_use REAL NOT NULL,
+    revisability REAL NOT NULL,
+    path_dependence_pressure REAL NOT NULL,
+    selective_narration REAL NOT NULL,
+    distributed_integration REAL NOT NULL,
+    memory_justice REAL NOT NULL,
+    memory_score REAL NOT NULL,
+    documented_retention REAL NOT NULL,
+    tacit_transfer REAL NOT NULL,
+    accessibility REAL NOT NULL,
+    technical_continuity REAL NOT NULL,
+    metadata_quality REAL NOT NULL,
+    loss_fragmentation REAL NOT NULL,
+    key_person_dependency REAL NOT NULL,
+    fragile_memory INTEGER,
+    high_path_dependence_memory INTEGER,
+    PRIMARY KEY (period, unit_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_unit
-ON institutional_observations(unit_id);
+CREATE INDEX idx_institutional_memory_units_effectiveness
+ON institutional_memory_units (memory_effectiveness);
 
-CREATE INDEX IF NOT EXISTS idx_inst_obs_period
-ON institutional_observations(period);
+CREATE INDEX idx_institutional_memory_units_high
+ON institutional_memory_units (high_resilience_memory);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_unit
-ON compliance_records(unit_id);
+CREATE INDEX idx_institutional_memory_units_fragile
+ON institutional_memory_units (fragile_memory);
 
-CREATE INDEX IF NOT EXISTS idx_compliance_period
-ON compliance_records(period);
+CREATE INDEX idx_institutional_memory_units_path
+ON institutional_memory_units (high_path_dependence_memory);
+
+CREATE INDEX idx_institutional_memory_periods_score
+ON institutional_memory_periods (memory_score);
