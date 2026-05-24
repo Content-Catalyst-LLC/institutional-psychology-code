@@ -1,0 +1,61 @@
+title: "Institutions and Human Behavior"
+slug: "institutions-human-behavior"
+series: "Institutional Psychology"
+repository: "https://github.com/Content-Catalyst-LLC/institutional-psychology-code/tree/main/articles/institutions-human-behavior"
+article_url: "/institutions-and-human-behavior/"
+status: "advanced-companion-code-scaffold"
+created_for: "Institutional Psychology knowledge series"
+methods:
+  - synthetic data generation
+  - institutional-behavior modeling
+  - behavioral-alignment simulation
+  - institutional durability analysis
+  - legitimacy and trust modeling
+  - normative-stability diagnostics
+  - information-quality analysis
+  - institutional-memory modeling
+  - learning-capacity simulation
+  - fragmentation-pressure assessment
+  - fragile institutional-environment review
+  - high-fragmentation environment review
+  - repair and learning sensitivity analysis
+  - SQL analytics
+  - multi-language reproducible workflows
+languages:
+  - Python
+  - R
+  - SQL
+  - Julia
+  - Stata
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Rust
+responsible_use:
+  intended_for:
+    - synthetic-data research
+    - methods demonstration
+    - institutional learning
+    - public-interest analysis
+    - institutions, behavior, legitimacy, trust, and coordination modeling
+    - reproducible education workflows
+  not_intended_for:
+    - employee screening
+    - employment selection
+    - hiring
+    - promotion
+    - compensation
+    - discipline
+    - termination
+    - workplace surveillance
+    - individual performance management
+    - psychological assessment
+    - predictive policing
+    - coercive public administration
+    - automated eligibility determination
+    - institutional scoring real people or communities
+    - legitimacy scoring real people or communities
+    - behavior scoring real people or communities
+    - trust scoring real people or communities
+    - ranking real people, firms, agencies, workers, students, or communities
